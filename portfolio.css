@@ -1,16 +1,28 @@
-.container{
-    height:100%;
-    display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas:
-    "h h h h h h h h h h h h"
+/* .imageWrapper{ */
+    /* height:100%; */
+    /* display:grid; */
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; */
+    /* grid-template-areas: */
+    /* "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
-    "t t t t t t t t t t t t"
-    "c c c c c c c c c c c c"
-    "c c c c c c c c c c c c"
-    "f f f f f f f f f f f f"
-}
+    "t t t t t t t t t t t t" */
+    /* "iOe iOe iOe iOe iOe iOe iOe iOe iOe iOe iOe iOe" */
+    /* "c c c c c c c c c c c c" */
+    /* "iT iT iT iT iT iT iT iT iT iT iT iT" */
+    /* "c c c c c c c c c c c c" */
+    /* "iTh iTh iTh iTh iTh iTh iTh iTh iTh iTh iTh iTh" */
+    /* "c c c c c c c c c c c c" */
+    /* "iF iF iF iF iF iF iF iF iF iF iF iF" */
+    /* "c c c c c c c c c c c c" */
+    /* "iFv iFv iFv iFv iFv iFv iFv iFv iFv iFv iFv iFv" */
+    /* "c c c c c c c c c c c c" */
+    /* "iS iS iS iS iS iS iS iS iS iS iS iS" */
+    /* "c c c c c c c c c c c c" */
+    /* "iSv iSv iSv iSv iSv iSv iSv iSv iSv iSv iSv iSv" */
+    /* "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+} */
 /* div{
     border-style: solid;
     border-color: black;
@@ -43,11 +55,13 @@
     grid-area: i;
     padding-left: 20px;
 }
-img{
+.imageWrapper{
     /* object-fit: cover; */
     /* max-height: 100%; */
-    max-width:100%;
-    padding-top: 10px;
+    /* max-width:100%; */
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right:20%
 }
 .nav {
     grid-area: n;
@@ -108,4 +122,34 @@ a.line {
 }
 body {
     background-color: black;
+}
+.imageTwo {
+    padding-bottom: 5%;
+}
+/* .imageThree {
+    grid-area: iTh;
+}
+.imageFour {
+    grid-area: iF;
+}
+.imageFive {
+    grid-area: iFv;
+}
+.imageSix {
+    grid-area: iS;
+}
+.imageSeven {
+    grid-area: iSv;
+} */
+.descriptions {
+    color: rgb(177, 177, 177);
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+}
+.projectTitle {
+    color: lightblue;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
