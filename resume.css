@@ -16,7 +16,7 @@
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
-    "c1 c1 c1 c2 c2 c2 c2 c2 c2 c2 c2 c2"
+    "c1 c1 c1 c2 c2 c2 c2 l l l l l"
 }
 #header {
     grid-area: h;
@@ -98,7 +98,6 @@ li {
     list-style: none;
 }
 .sections {
-    /* font-size: 1.5em; */
     text-transform: lowercase;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -118,4 +117,23 @@ li {
 }
 #headerA {
     color: white;
+}
+#Layer_1 {
+    padding-left: 0%;
+    stroke: white;
+    stroke-width: 1px;
+    stroke-dasharray: 500px;
+    animation: dash 7s linear infinite;
+    -webkit-animation: dash 7s linear infinite;
+    fill: transparent;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+        fill: white;
+    }
+}
+svg {
+    grid-area: l;
+    width: 550%;
 }

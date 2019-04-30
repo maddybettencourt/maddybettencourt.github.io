@@ -1,6 +1,5 @@
 * {
     background-color: rgb(252, 213, 42);
-    overflow: visible;
 }
 /* turns border on and off */
 /* div {
@@ -12,14 +11,16 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
     "g g g g g g g g g g g g"
-    "c c c c c c c c c c c c"
-    "a a a a a a a a a a a a"
+    "c c c ar ar ar ar ar ar ar ar ar"
+    "p p p p p p p p p p p p"
     "r r r r r r r r r r r r"
+    "am am am am am am am am am am am am"
+    "sp sp sp aw aw aw aw aw aw aw aw aw"
     "ct ct ct ct ct ct ct ct ct ct ct ct";
 }
 #header {
@@ -63,19 +64,18 @@ nav {
     padding-left: 2.3%;
     padding-right: 2.3%;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 20pt;
     color: white;
 }
-/* .greeting:hover {
-    color: white;
-} */
-.content {
+#content {
     grid-area: c;
     font-family: 'Poppins', sans-serif;
-    padding-left: 2.3%;
-    padding-right: 2.3%;
+    padding-left: 9.7%;
+    padding-right: 0%;
+    margin-right: 0%;
     padding-bottom: 1.5%;
     font-size: 12pt;
+    display: inline;
 }
 a {
     color: black;
@@ -95,7 +95,7 @@ a.line:hover {
 }
 /* used part of a tutorial from csstricks.com */
 #Layer_1 {
-    padding-left: 28%;
+    padding-left: 0%;
     stroke: white;
     stroke-width: 1px;
     stroke-dasharray: 500px;
@@ -110,13 +110,11 @@ a.line:hover {
     }
 }
 /* back to my code */
-/* trying to move the arrow to next to "check out my work" */
 .arrow {
-    grid-area: a;
-    height: 100%;
-    width: 100%;
+    grid-area: ar;
+    display: inline;
 }
-.resumeContent {
+#resumeContent {
     grid-area: r;
     font-family: 'Poppins', sans-serif;
     padding-left: 2.3%;
@@ -130,7 +128,7 @@ a.line:hover {
 /* .here:hover {
     color: black;
 } */
-.contactMe {
+#contactMe {
     grid-area: ct;
     font-family: 'Poppins', sans-serif;
     padding-left: 2.3%;
@@ -140,4 +138,45 @@ a.line:hover {
 }
 #headerA {
     color: white;
+}
+#aboutMe {
+    grid-area: am;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    padding-top: 1.5%;
+    font-size: 12pt;
+}
+#aboutMeImage {
+    grid-area: sp;
+    /* sp for sunflower picture */
+    padding-left: 9%;
+    padding-top: 1.5%; 
+}
+.aboutMeInfo {
+    grid-area: aw;
+    /* aw for about words */
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2.3%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    font-size: 12pt;
+}
+.section {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 1.5%;
+    /* padding-left: 2.3%; */
+    padding-right: 2.3%;
+    font-weight: 600;
+    font-size: 20pt;
+    color: white;
+    list-style: none;
+}
+.portfolio {
+    grid-area: p;
+}
+.portfoliosvg {
+    width: 60%;
+    margin: 0 auto;
 }
