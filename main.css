@@ -11,16 +11,18 @@
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "n n n n n n n n n n n n"
     "g g g g g g g g g g g g"
-    "c c c ar ar ar ar ar ar ar ar ar"
+    "c c c c c c c c c c c c"
+    "ar ar ar ar ar ar ar ar ar ar ar ar"
     "p p p p p p p p p p p p"
     "r r r r r r r r r r r r"
     "am am am am am am am am am am am am"
-    "sp sp sp aw aw aw aw aw aw aw aw aw"
+    "sp sp sp sp sp sp sp sp sp sp sp sp"
+    "aw aw aw aw aw aw aw aw aw aw aw aw"
     "ct ct ct ct ct ct ct ct ct ct ct ct";
 }
 #header {
@@ -67,12 +69,12 @@ nav {
     font-size: 20pt;
     color: white;
 }
-#content {
+#work {
     grid-area: c;
     font-family: 'Poppins', sans-serif;
-    padding-left: 9.7%;
+    padding-left: 2.3%;
     padding-right: 0%;
-    margin-right: 0%;
+    margin-right: 4%;
     padding-bottom: 1.5%;
     font-size: 12pt;
     display: inline;
@@ -95,13 +97,16 @@ a.line:hover {
 }
 /* used part of a tutorial from csstricks.com */
 #Layer_1 {
-    padding-left: 0%;
+    padding-left: 2.3%;
     stroke: white;
     stroke-width: 1px;
     stroke-dasharray: 500px;
     animation: dash 7s linear infinite;
     -webkit-animation: dash 7s linear infinite;
     fill: transparent;
+    padding-top: 2%;
+    width: 50%;
+    margin: 0 auto;
 }
 @keyframes dash {
     to {
@@ -112,7 +117,6 @@ a.line:hover {
 /* back to my code */
 .arrow {
     grid-area: ar;
-    display: inline;
 }
 #resumeContent {
     grid-area: r;
@@ -150,7 +154,7 @@ a.line:hover {
 #aboutMeImage {
     grid-area: sp;
     /* sp for sunflower picture */
-    padding-left: 9%;
+    padding-left: 2.3%;
     padding-top: 1.5%; 
 }
 .aboutMeInfo {
@@ -179,4 +183,57 @@ a.line:hover {
 .portfoliosvg {
     width: 60%;
     margin: 0 auto;
+}
+#typePoster {
+    padding-top: 2%;
+}
+.contactOptions {
+    list-style: none;
+    padding-bottom: .5%;
+}
+#bottomSpace {
+    margin-bottom: 2%;
+}
+.subtext {
+    list-style: none;
+    padding-bottom: 1%;
+}
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "h h"
+        "n n"
+        "g g"
+        "c c"
+        "ar ar"
+        "p p"
+        "r r"
+        "am am"
+        "sp sp"
+        "aw aw"
+        "ct ct";
+    }
+    #Layer_1 {
+        padding-left: 2.3%;
+        stroke: white;
+        stroke-width: 1px;
+        stroke-dasharray: 500px;
+        animation: dash 7s linear infinite;
+        -webkit-animation: dash 7s linear infinite;
+        fill: transparent;
+        padding-top: 2%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 1000;
+            fill: white;
+        }
+    }
+    .arrow {
+        grid-area: ar;
+    }
 }
