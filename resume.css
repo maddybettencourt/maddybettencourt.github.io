@@ -137,15 +137,26 @@ svg {
     grid-area: l;
     width: 550%;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto auto auto;
         grid-template-areas:
         "h"
         "n"
+        "l"
         "c1"
-        "c2"
-        "l";
+        "c2";
+    }
+    svg {
+        grid-area: l;
+        width: 80%;
+        padding-top: 1%;
+    }
+    #header {
+        font-size: 25pt;
+    }
+    .nav {
+        font-size: 12pt;
     }
 }
