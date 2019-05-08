@@ -230,8 +230,10 @@ a.line:hover {
     }
     #header {
         font-size: 30pt;
+        display: inline;
     }
     .nav {
         font-size: 15pt;
+        display: inline;
     }
 }
