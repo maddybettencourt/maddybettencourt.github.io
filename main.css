@@ -229,11 +229,17 @@ a.line:hover {
         padding-left: 2.3%;
     }
     #header {
-        font-size: 30pt;
+        font-size: 25pt;
         display: inline;
+    }
+    .graphicDesigner {
+        font-size: 20pt;
     }
     .nav {
         font-size: 15pt;
         display: inline;
+    }
+    .greeting {
+        font-size: 17pt;
     }
 }

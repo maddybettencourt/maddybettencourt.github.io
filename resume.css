@@ -154,9 +154,17 @@ svg {
         padding-top: 1%;
     }
     #header {
+        font-size: 25pt;
+        display: inline;
+    }
+    .graphicDesigner {
         font-size: 20pt;
     }
     .nav {
-        font-size: 10pt;
+        font-size: 15pt;
+        display: inline;
+    }
+    .greeting {
+        font-size: 17pt;
     }
 }
