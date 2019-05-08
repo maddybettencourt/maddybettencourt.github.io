@@ -230,6 +230,7 @@ a.line:hover {
     }
     #header {
         font-size: 20pt;
+        color: aqua;
     }
     .nav {
         font-size: 10pt;
