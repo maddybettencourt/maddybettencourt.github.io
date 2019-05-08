@@ -229,10 +229,9 @@ a.line:hover {
         padding-left: 2.3%;
     }
     #header {
-        font-size: 20pt;
-        color: aqua;
+        font-size: 30pt;
     }
     .nav {
-        font-size: 10pt;
+        font-size: 15pt;
     }
 }
