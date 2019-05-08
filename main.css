@@ -200,40 +200,29 @@ a.line:hover {
 }
 @media (min-width: 600px) {
     .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas:
-        "h h"
-        "n n"
-        "g g"
-        "c c"
-        "ar ar"
-        "p p"
-        "r r"
-        "am am"
-        "sp sp"
-        "aw aw"
-        "ct ct";
+        "h h h"
+        "n n n"
+        "g g g"
+        "c c c"
+        "ar ar ar"
+        "p p p"
+        "r r r"
+        "am am am"
+        "sp sp sp"
+        "aw aw aw"
+        "ct ct ct";
     }
     #Layer_1 {
         padding-left: 2.3%;
         stroke: white;
         stroke-width: 1px;
-        stroke-dasharray: 500px;
-        animation: dash 7s linear infinite;
-        -webkit-animation: dash 7s linear infinite;
-        fill: transparent;
         padding-top: 2%;
-        width: 100%;
-        margin: 0 auto;
-    }
-    @keyframes dash {
-        to {
-            stroke-dashoffset: 1000;
-            fill: white;
-        }
     }
     .arrow {
         grid-area: ar;
+        width: 100%;
     }
 }
