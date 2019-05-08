@@ -238,6 +238,7 @@ a.line:hover {
     .nav {
         font-size: 15pt;
         display: inline;
+        text-align: left;
     }
     .greeting {
         font-size: 17pt;
