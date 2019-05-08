@@ -1,2 +1,5 @@
 # boilerPlate
-basic starting file structure for Umass Dartmouth
+This is my portfolio site. I used HTML and CSS. 
+I am having trouble with my nav bar when I am on mobile. For some reason my nav bar on my resume looks super different than it does on my main landing page. I cannot figure out why that's not working. I am also having difficulties with my arrow svg. It is being cut off a little on the top and sides and I have tried everything to fix it and nothing worked. 
+I learned a lot during this project, especially when I started my entire site over a few weeks ago. I was really surprised by how much I was able to accomplish on my site. While there's still some things that I'm not tottally happy with and I will fix those in the future I think this site is more indicitave of my personality than the other one. I really like my arrow animation and I think it's wild that I was actually able to animate it like that! 
+Overall I am happy with my site but I'm exicted to keep updating and working on it overtime. This was a really cool project and I'm happy to find out that I do actually like coding, I didn't think it was a career that I would necessarily persue but it's a possability now. :)
